@@ -1,0 +1,7 @@
+search_and_index_task:
+  description: "Search for the top 10 papers about {topic} using the Arxiv tool. For each paper found, evaluate its pertinence to the topic. You MUST return a JSON list of evaluations."
+  expected_output: "A structured list of PaperRelevance objects (JSON)."
+
+answer_task:
+  description: "Read the provided summaries of relevant papers. Synthesize them into a clear, direct answer to the user's question: {topic}. Do not hallucinate. Uses only the provided context."
+  expected_output: "A markdown-formatted answer merging insights from all relevant papers."
